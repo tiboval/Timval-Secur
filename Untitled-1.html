@@ -4,7 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timval Secure - Votre Guide Ultime de Sécurité des Mots de Passe</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #181818;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #282828;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #383838;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #383838;
+            color: #eee;
+        }
+        main {
+            flex-grow: 1;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        .panel {
+            background-color: #222;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        .panel h2 {
+            color: #bbb;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        #password-tester label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+        #password-input {
+            background-color: #333;
+            color: #eee;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #test-button {
+            background-color: #00aaff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #test-button:hover {
+            background-color: #0088cc;
+        }
+        #result {
+            margin-top: 15px;
+            color: #ddd;
+            font-weight: bold;
+            text-align: center;
+        }
+        .security-info h3 {
+            color: #bbb;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .security-info ul {
+            list-style: disc;
+            padding-left: 20px;
+            color: #ccc;
+            line-height: 1.6;
+        }
+        .security-info li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background-color: #282828;
+            color: #777;
+            text-align: left;
+            padding: 15px 20px;
+            border-top: 1px solid #383838;
+            font-size: 0.8em;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        /* Ajoutez ici d'autres styles futuristes pour l'esthétique */
+    </style>
 </head>
 <body>
     <header>
@@ -98,10 +214,10 @@
                 </li>
             </ul>
         </section>
-
+</body>
         <section id="apropos" class="panel">
             <h2>À Propos de Timval Secure</h2>
-            <p style="color: #ccc;">Ce site a été créé par Timval pour sensibiliser à l'importance de la sécurité des mots de passe et fournir des conseils pratiques pour se protéger contre les menaces en ligne.</p>
+            <p style="color: #ccc;">Ce site a été créé par la Timval pour sensibiliser à l'importance de la sécurité des mots de passe et fournir des conseils pratiques pour se protéger contre les menaces en ligne.(un antivirus sera deployer en 2025 pour vous protéger)</p>
         </section>
     </main>
 
@@ -155,5 +271,18 @@
             }
         });
     </script>
+
+    <style>
+        /* Styles spécifiques pour le résultat du test de mot de passe */
+        #result.weak {
+            color: #ff4d4d; /* Rouge */
+        }
+        #result.medium {
+            color: #ffc107; /* Jaune */
+        }
+        #result.strong {
+            color: #28a745; /* Vert */
+        }
+    </style>
 </body>
 </html>
