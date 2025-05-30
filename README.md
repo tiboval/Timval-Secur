@@ -214,10 +214,10 @@
                 </li>
             </ul>
         </section>
-
+</body>
         <section id="apropos" class="panel">
             <h2>À Propos de Timval Secure</h2>
-            <p style="color: #ccc;">Ce site a été créé par Timval pour sensibiliser à l'importance de la sécurité des mots de passe et fournir des conseils pratiques pour se protéger contre les menaces en ligne.</p>
+            <p style="color: #ccc;">Ce site a été créé par la Timval pour sensibiliser à l'importance de la sécurité des mots de passe et fournir des conseils pratiques pour se protéger contre les menaces en ligne.(un antivirus sera deployer en 2025 pour vous protéger)</p>
         </section>
     </main>
 
