@@ -457,3 +457,74 @@
     </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouton Futuriste</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0d1117; /* Dark background for futuristic feel */
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .futuristic-button {
+            background-color: #00bcd4; /* Cyan/Teal base color */
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px; /* Slightly rounded corners */
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none; /* Remove underline from link */
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.6); /* Glow effect */
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .futuristic-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: all 0.7s ease;
+        }
+
+        .futuristic-button:hover {
+            background-color: #00e5ff; /* Lighter cyan on hover */
+            box-shadow: 0 0 25px rgba(0, 229, 255, 0.8); /* Stronger glow on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+        }
+
+        .futuristic-button:hover::before {
+            left: 100%;
+        }
+
+        .futuristic-button:active {
+            transform: translateY(0);
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://tiboval.github.io/Timval-Secur-conexion/" class="futuristic-button">
+        Accéder au Futur
+    </a>
+
+</body>
+</html>
